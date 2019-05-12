@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">attendance</string>
+    <array name="std_class">
+        <item>CSIT</item>
+        <item>BCA</item>
+        <item>BIT</item>
+        <item>BIM</item>
+
+    </array>
+    <array name="period">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+
+    </array>
+
+
+</resources>

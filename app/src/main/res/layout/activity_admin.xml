@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adminActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcomeadmin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="TextView"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/manageStudents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="view_student"
+            android:text="Manage Studnets" />
+
+        <Button
+            android:id="@+id/manageTeachers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="view_teachers"
+            android:text="Manage Teachers" />
+
+        <EditText
+            android:layout_marginTop="40dp"
+            android:id="@+id/date_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="YYYY-DD-MM"
+            android:inputType="date" />
+
+        <Spinner
+            android:id="@+id/class_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/std_class" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="view_attendance"
+            android:text="View Attendance" />
+    </LinearLayout>
+
+</RelativeLayout>

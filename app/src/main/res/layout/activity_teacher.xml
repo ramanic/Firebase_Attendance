@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacherActivity">
+
+    <LinearLayout
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerClassAttedance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/std_class" />
+
+            <Spinner
+                android:id="@+id/spinnerPeriodAttedance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/period" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="manageAttendance"
+            android:text="Take Attendance" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/date_teachers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="YYYY-DD-MM"
+                android:inputType="date" />
+
+            <Spinner
+                android:id="@+id/class_teachers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/std_class" />
+
+            <Button
+                android:id="@+id/buttonViewAtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="view_attendance"
+                android:text="View Attendance" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
