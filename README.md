@@ -1,5 +1,5 @@
 # Firebase_Attendance
-A firebase bease attendance system for Android.
+A firebase based attendance system for Android.
 
 
 #Admins : <br>
